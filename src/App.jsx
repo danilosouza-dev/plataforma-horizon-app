@@ -1,13 +1,16 @@
-import { useState } from 'react'
+// import { useState } from 'react'
+import { Sidebar } from "./components/Sidebar"
+import { GlobalStyle } from "./styles/global"
 
-function App() {
-  const [count, setCount] = useState(0)
+
+export function App() {
+  // const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
-      oi react
-    </div>
+    <>
+      <Sidebar />
+      <GlobalStyle />
+    </>
   )
 }
 
-export default App
